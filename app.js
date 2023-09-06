@@ -1,5 +1,17 @@
-const _=require('loadash');
-const items=[1,[2,[3,[4]]]]
+var http=require('http')
+var fs= require('fs')
 
-const newItems=_.flattenDeep(items);
-console.log(newItems);
+http.createServer(function(req,res){
+    // const text=fs.readFileSync('./content/bigger.txt','utf-8')
+    // res.end(text)
+
+    const fileStream=fs.createReadStream('./content/bigger.txt','utf-8');
+    fileStream.on('open',()=>{
+        fileStream.pipe(res )
+    })
+    fileStream.on('error',(err)=>{
+        res.end(err)
+    })
+})
+.listen(5500)
+
