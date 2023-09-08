@@ -1,0 +1,11 @@
+.container{
+    text-align: center;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+
+.text-center{
+    font-size: 30px;
+    font-style: italic;
+}

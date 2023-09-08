@@ -1,3 +1,12 @@
+const person=[
+    {id:1,name:"Dipesh"},
+    {id:2,name:"Rohan"},
+    {id:3,name:"Biplab"},
+    {id:4,name:"Saurab"},
+    {id:5,name:"Bisoj"}
+]
+
+
 const data=[
     {
     "name": "Adeel Solangi",
@@ -6899,4 +6908,4 @@ const data=[
         }
         ];
 
-        module.exports= {data,data2};
+        module.exports= {data,data2,person};
